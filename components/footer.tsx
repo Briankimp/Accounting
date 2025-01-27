@@ -59,10 +59,18 @@ export function Footer() {
           <div>
             <h3 className="mb-4 text-xl font-semibold">Follow Us</h3>
             <div className="flex space-x-4">
-              <Link href="#" className="text-gray-300 hover:text-white">
+              <Link
+                target="blank"
+                href="https://www.facebook.com/share/19g7yJeDNi/"
+                className="text-gray-300 hover:text-white"
+              >
                 <Facebook className="h-6 w-6" />
               </Link>
-              <Link href="#" className="text-gray-300 hover:text-white">
+              <Link
+                target="blank"
+                href="https://x.com/griffin_geophry?t=dTBrhApxCoQ9cGxtHy_mlA&s=09"
+                className="text-gray-300 hover:text-white"
+              >
                 <Twitter className="h-6 w-6" />
               </Link>
               <Link href="#" className="text-gray-300 hover:text-white">
