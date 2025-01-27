@@ -19,7 +19,7 @@ export function ContactInfo() {
             <p className="text-gray-600">
               LOGOF ENTERPRISES
               <br />
-              [Add office address here]
+              Nairobi, Kenya
             </p>
           </div>
         </motion.div>
