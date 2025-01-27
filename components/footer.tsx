@@ -1,6 +1,13 @@
-import Link from "next/link"
-import { Facebook, Twitter, Instagram, Linkedin } from "lucide-react"
-import { Logo } from "./logo"
+import Link from "next/link";
+import {
+  Facebook,
+  Twitter,
+  Instagram,
+  Linkedin,
+  Github,
+  GithubIcon,
+} from "lucide-react";
+import { Logo } from "./logo";
 
 export function Footer() {
   return (
@@ -10,7 +17,8 @@ export function Footer() {
           <div>
             <Logo />
             <p className="mt-4 text-gray-300">
-              Providing expert accounting and bookkeeping services for businesses of all sizes.
+              Providing expert accounting and bookkeeping services for
+              businesses of all sizes.
             </p>
           </div>
           <div>
@@ -22,12 +30,18 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/services" className="text-gray-300 hover:text-white">
+                <Link
+                  href="/services"
+                  className="text-gray-300 hover:text-white"
+                >
                   Services
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="text-gray-300 hover:text-white">
+                <Link
+                  href="/contact"
+                  className="text-gray-300 hover:text-white"
+                >
                   Contact
                 </Link>
               </li>
@@ -62,11 +76,19 @@ export function Footer() {
         </div>
       </div>
       <div className="border-t border-blue-800 py-4">
-        <div className="container text-center text-gray-300">
-          <p>&copy; 2023 LOGOF CONSULT. All rights reserved.</p>
+        <div className="container w-full justify-between text-center flex items-center text-gray-300">
+          <p>&copy; 2025 LOGOF CONSULT. All rights reserved.</p>
+          <div>
+            <Link
+              className="flex items-center hover:"
+              target="blank"
+              href="https://brianmunene.vercel.app/"
+            >
+              Developed by <GithubIcon />
+            </Link>
+          </div>
         </div>
       </div>
     </footer>
-  )
+  );
 }
-
