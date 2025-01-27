@@ -14,7 +14,7 @@ export function HeroSection() {
         objectFit="cover"
         className="z-0"
       />
-      <div className="absolute inset-0 bg-logofBlue/70 z-10"></div>
+      <div className="absolute inset-0 bg-logofBlue/ z-10"></div>
       <div className="container relative z-20 flex h-full flex-col items-center justify-center gap-8 text-white">
         <MotionDiv
           initial={{ opacity: 0, y: 20 }}
@@ -46,7 +46,7 @@ export function HeroSection() {
         >
           <Button
             size="lg"
-            className="bg-logofYellow text-logofBlue hover:bg-yellow-300"
+            className="bg-logofYellow text-white hover:bg-yellow-700"
           >
             Get Started
           </Button>
