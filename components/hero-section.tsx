@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Link from "next/link";
 import { MotionDiv, MotionH1, MotionP } from "./motion-wrapper";
 import { Button } from "@/components/ui/button";
 
@@ -48,7 +49,8 @@ export function HeroSection() {
             size="lg"
             className="bg-logofYellow text-white hover:bg-yellow-700"
           >
-            Get Started
+            <Link href="/contact">Get Started</Link>
+          
           </Button>
         </MotionDiv>
       </div>
