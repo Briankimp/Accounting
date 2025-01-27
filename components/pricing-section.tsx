@@ -1,28 +1,43 @@
-import { motion } from "framer-motion"
-import { Check } from "lucide-react"
-import { Button } from "@/components/ui/button"
+import { motion } from "framer-motion";
+import { Check } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 export function PricingSection() {
   const plans = [
     {
       name: "Basic",
-      price: "$299",
+      price: "Ksh 30,000",
       description: "Perfect for small businesses",
-      features: ["Financial Planning", "Tax Advisory", "Monthly Report", "24/7 Support"],
+      features: [
+        "Financial Planning",
+        "Tax Advisory",
+        "Monthly Report",
+        "24/7 Support",
+      ],
     },
     {
       name: "Professional",
-      price: "$599",
+      price: "Ksh 50,000",
       description: "Ideal for growing companies",
-      features: ["All Basic features", "Business Analytics", "Investment Strategy", "Dedicated Advisor"],
+      features: [
+        "All Basic features",
+        "Business Analytics",
+        "Investment Strategy",
+        "Dedicated Advisor",
+      ],
     },
     {
       name: "Enterprise",
-      price: "$999",
+      price: "Ksh 100,000",
       description: "For large organizations",
-      features: ["All Pro features", "Custom Solutions", "Priority Support", "Quarterly Reviews"],
+      features: [
+        "All Pro features",
+        "Custom Solutions",
+        "Priority Support",
+        "Quarterly Reviews",
+      ],
     },
-  ]
+  ];
 
   return (
     <section className="bg-muted py-24">
@@ -58,7 +73,10 @@ export function PricingSection() {
                     </li>
                   ))}
                 </ul>
-                <Button className="w-full" variant={index === 1 ? "default" : "outline"}>
+                <Button
+                  className="w-full"
+                  variant={index === 1 ? "default" : "outline"}
+                >
                   {index === 1 ? "Get Started" : "Learn More"}
                 </Button>
               </div>
@@ -67,6 +85,5 @@ export function PricingSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }
-
