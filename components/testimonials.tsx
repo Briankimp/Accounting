@@ -1,28 +1,28 @@
-import { motion } from "framer-motion"
-import { Star } from "lucide-react"
-import Image from "next/image"
+import { motion } from "framer-motion";
+import { Star } from "lucide-react";
+import Image from "next/image";
 
 export function Testimonials() {
   const testimonials = [
     {
       text: "LOGOF CONSULT provided exceptional accounting services that helped streamline our financial processes.",
-      author: "John Doe",
-      company: "ABC Company Ltd.",
+      author: "Brian",
+      company: "Brian Tech-Hub",
       rating: 5,
     },
     {
       text: "Their bookkeeping expertise has been invaluable to our business growth and financial stability.",
-      author: "Jane Smith",
-      company: "XYZ Enterprise Corp.",
+      author: "Kimani",
+      company: "Robert-Kim Printing Services",
       rating: 5,
     },
     {
       text: "The financial analysis provided by LOGOF CONSULT gave us crucial insights for strategic decision-making.",
-      author: "Robert Johnson",
-      company: "123 Business Inc.",
+      author: "Robert Kamau",
+      company: "Utumishi Real Estate",
       rating: 5,
     },
-  ]
+  ];
 
   return (
     <section className="py-24 relative">
@@ -54,11 +54,16 @@ export function Testimonials() {
               <div className="rounded-lg bg-white p-8 shadow-lg transition-all duration-300 hover:shadow-xl">
                 <div className="mb-4 flex gap-1">
                   {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star key={i} className="h-5 w-5 fill-logofYellow text-logofYellow" />
+                    <Star
+                      key={i}
+                      className="h-5 w-5 fill-logofYellow text-logofYellow"
+                    />
                   ))}
                 </div>
                 <p className="mb-4 text-lg text-gray-700">{testimonial.text}</p>
-                <p className="font-semibold text-logofBlue">{testimonial.author}</p>
+                <p className="font-semibold text-logofBlue">
+                  {testimonial.author}
+                </p>
                 <p className="text-sm text-gray-600">{testimonial.company}</p>
               </div>
             </motion.div>
@@ -66,6 +71,5 @@ export function Testimonials() {
         </div>
       </div>
     </section>
-  )
+  );
 }
-
