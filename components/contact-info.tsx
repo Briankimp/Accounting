@@ -38,7 +38,7 @@ export function ContactInfo() {
           </div>
         </motion.div>
       </div>
-      <div className="mt-8">
+      {/* <div className="mt-8">
         <Image
           src="https://maps.googleapis.com/maps/api/staticmap?center=Nairobi,Kenya&zoom=12&size=600x300&key=YOUR_GOOGLE_MAPS_API_KEY"
           alt="Map of office location"
@@ -46,7 +46,7 @@ export function ContactInfo() {
           height={300}
           className="rounded-lg"
         />
-      </div>
+      </div> */}
     </motion.div>
   )
 }
