@@ -3,8 +3,16 @@ import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
-  title: "Geoffry Accounting",
+  title: "Logof Accounting",
   description: "Website for an accounting firm. We deliver exceprional results",
+  icons: {
+    icon: [
+      {
+        url: "/logo.png",
+        sizes: "any",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
