@@ -47,7 +47,7 @@ module.exports = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        logofBlue: "#3B82F6",
+        logofBlue: "#c39c66",
         logofGreen: "#22C55E",
         logofYellow: "#FBBF24",
       },
@@ -61,5 +61,5 @@ module.exports = {
       },
     },
   },
-}
+};
 
