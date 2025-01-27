@@ -1,12 +1,14 @@
-import Image from "next/image"
-import { motion } from "framer-motion"
-import { BookOpen, Calculator, FileText, PieChart } from "lucide-react"
+"use client";
+import Image from "next/image";
+import { motion } from "framer-motion";
+import { BookOpen, Calculator, FileText, PieChart } from "lucide-react";
 
 export function ServicesGrid() {
   const services = [
     {
       title: "Accounting",
-      description: "Comprehensive accounting services for businesses of all sizes",
+      description:
+        "Comprehensive accounting services for businesses of all sizes",
       icon: Calculator,
       image:
         "https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80",
@@ -20,7 +22,8 @@ export function ServicesGrid() {
     },
     {
       title: "Financial Statements",
-      description: "Preparation of balance sheets, income statements, and cash flow statements",
+      description:
+        "Preparation of balance sheets, income statements, and cash flow statements",
       icon: FileText,
       image:
         "https://images.unsplash.com/photo-1554224154-26032ffc0d07?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2026&q=80",
@@ -32,7 +35,7 @@ export function ServicesGrid() {
       image:
         "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
     },
-  ]
+  ];
 
   return (
     <section className="py-24 bg-gray-50">
@@ -67,7 +70,9 @@ export function ServicesGrid() {
                   </div>
                 </div>
                 <div className="p-6">
-                  <h3 className="mb-4 text-xl font-semibold text-logofBlue">{service.title}</h3>
+                  <h3 className="mb-4 text-xl font-semibold text-logofBlue">
+                    {service.title}
+                  </h3>
                   <p className="text-gray-600">{service.description}</p>
                 </div>
               </div>
@@ -76,6 +81,5 @@ export function ServicesGrid() {
         </div>
       </div>
     </section>
-  )
+  );
 }
-

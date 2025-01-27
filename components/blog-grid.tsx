@@ -1,6 +1,7 @@
-import Image from "next/image"
-import Link from "next/link"
-import { motion } from "framer-motion"
+"use client";
+import Image from "next/image";
+import Link from "next/link";
+import { motion } from "framer-motion";
 
 export function BlogGrid() {
   const posts = [
@@ -9,24 +10,29 @@ export function BlogGrid() {
       excerpt:
         "A comprehensive guide to understanding how financial markets work and their impact on your investments.",
       date: "March 15, 2024",
-      image: "https://solvent.qodeinteractive.com/wp-content/uploads/2023/04/blog-img-1.jpg",
+      image:
+        "https://solvent.qodeinteractive.com/wp-content/uploads/2023/04/blog-img-1.jpg",
       category: "Investment",
     },
     {
       title: "Tax Planning Strategies",
-      excerpt: "Learn about effective tax planning strategies that can help optimize your financial position.",
+      excerpt:
+        "Learn about effective tax planning strategies that can help optimize your financial position.",
       date: "March 10, 2024",
-      image: "https://solvent.qodeinteractive.com/wp-content/uploads/2023/04/blog-img-2.jpg",
+      image:
+        "https://solvent.qodeinteractive.com/wp-content/uploads/2023/04/blog-img-2.jpg",
       category: "Tax",
     },
     {
       title: "Business Growth Tips",
-      excerpt: "Essential tips and strategies for growing your business in today's competitive market.",
+      excerpt:
+        "Essential tips and strategies for growing your business in today's competitive market.",
       date: "March 5, 2024",
-      image: "https://solvent.qodeinteractive.com/wp-content/uploads/2023/04/blog-img-3.jpg",
+      image:
+        "https://solvent.qodeinteractive.com/wp-content/uploads/2023/04/blog-img-3.jpg",
       category: "Business",
     },
-  ]
+  ];
 
   return (
     <section className="py-24">
@@ -58,14 +64,23 @@ export function BlogGrid() {
                 </div>
                 <div className="p-6">
                   <div className="mb-2 flex items-center gap-2">
-                    <span className="text-sm text-primary">{post.category}</span>
-                    <span className="text-sm text-muted-foreground">• {post.date}</span>
+                    <span className="text-sm text-primary">
+                      {post.category}
+                    </span>
+                    <span className="text-sm text-muted-foreground">
+                      • {post.date}
+                    </span>
                   </div>
                   <h3 className="mb-2 text-xl font-semibold group-hover:text-primary transition-colors duration-300">
                     {post.title}
                   </h3>
-                  <p className="mb-4 line-clamp-3 text-muted-foreground">{post.excerpt}</p>
-                  <Link href="#" className="text-sm font-semibold text-primary hover:underline">
+                  <p className="mb-4 line-clamp-3 text-muted-foreground">
+                    {post.excerpt}
+                  </p>
+                  <Link
+                    href="#"
+                    className="text-sm font-semibold text-primary hover:underline"
+                  >
                     Read More
                   </Link>
                 </div>
@@ -75,6 +90,5 @@ export function BlogGrid() {
         </div>
       </div>
     </section>
-  )
+  );
 }
-

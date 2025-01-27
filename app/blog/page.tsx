@@ -1,6 +1,7 @@
-import { SiteHeader } from "@/components/site-header"
-import { BlogGrid } from "@/components/blog-grid"
-import { Footer } from "@/components/footer"
+"use client";
+import { SiteHeader } from "@/components/site-header";
+import { BlogGrid } from "@/components/blog-grid";
+import { Footer } from "@/components/footer";
 
 export default function BlogPage() {
   return (
@@ -14,6 +15,5 @@ export default function BlogPage() {
       </main>
       <Footer />
     </div>
-  )
+  );
 }
-

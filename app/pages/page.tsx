@@ -1,9 +1,10 @@
-import { SiteHeader } from "@/components/site-header"
-import { ServicesGrid } from "@/components/services-grid"
-import { TeamSection } from "@/components/team-section"
-import { Testimonials } from "@/components/testimonials"
-import { PricingSection } from "@/components/pricing-section"
-import { Footer } from "@/components/footer"
+"use client";
+import { SiteHeader } from "@/components/site-header";
+import { ServicesGrid } from "@/components/services-grid";
+import { TeamSection } from "@/components/team-section";
+import { Testimonials } from "@/components/testimonials";
+import { PricingSection } from "@/components/pricing-section";
+import { Footer } from "@/components/footer";
 
 export default function PagesPage() {
   return (
@@ -20,6 +21,5 @@ export default function PagesPage() {
       </main>
       <Footer />
     </div>
-  )
+  );
 }
-

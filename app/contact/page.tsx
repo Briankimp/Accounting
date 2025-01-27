@@ -1,3 +1,4 @@
+'use client'
 import { SiteHeader } from "@/components/site-header"
 import { ContactForm } from "@/components/contact-form"
 import { ContactInfo } from "@/components/contact-info"
