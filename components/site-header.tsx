@@ -27,23 +27,36 @@ export function SiteHeader() {
           <Link href="/" className="text-xl font-semibold">
             <Logo />
           </Link>
-          <nav className="flex items-center gap-8">
-            <Link href="/" className="font-medium text-gray-700 hover:text-logofBlue">
+          <nav className="flex items-center gap-8  text-xl">
+            <Link
+              href="/"
+              className="font-medium text-gray-700 hover:text-logofBlue"
+            >
               Home
             </Link>
-            <Link href="/services" className="font-medium text-gray-700 hover:text-logofBlue">
+            <Link
+              href="/services"
+              className="font-medium text-gray-700 hover:text-logofBlue"
+            >
               Services
             </Link>
-            <Link href="/contact" className="font-medium text-gray-700 hover:text-logofBlue">
+            <Link
+              href="/contact"
+              className="font-medium text-gray-700 hover:text-logofBlue"
+            >
               Contact
             </Link>
-            <Button asChild variant="outline" className="ml-4">
+            <Button
+              asChild
+              variant="outline"
+              className="ml-4 hover:bg-logofBlue"
+            >
               <Link href="/contact">Get a Quote</Link>
             </Button>
           </nav>
         </div>
       </div>
     </header>
-  )
+  );
 }
 
